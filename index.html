@@ -10,123 +10,13 @@
 
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos @2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #F5F7FA;
-      color: #2A2E36;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: #00A8FF;
-    }
-
-    header {
-      background: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 60px 40px;
-      gap: 40px;
-    }
-
-    .hero h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-    }
-
-    .hero img {
-      max-width: 100%;
-      width: 400px;
-    }
-
-    .section {
-      padding: 40px 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    ul li::before {
-      content: "✅";
-      margin-right: 10px;
-    }
-
-    .projects .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #2A2E36;
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero img {
-        width: 100%;
-        max-width: 300px;
-      }
-    }
-    img {
-        width: 250px; /* Ширина круга */
-        height: 250px; /* Высота круга */
-        border-radius: 25%; /* Скругление углов */
-        object-fit: cover; /* Для правильного отображения, если картинка не квадратная */
-    }
+  <style >
   </style>
 </head>
 <body>
+
   <header>
     <h1>Даниил</h1>
     <nav>
@@ -138,12 +28,14 @@
   </header>
 
   <section class="hero" data-aos="fade-down">
-    <img src="./src/Photo.jpg" alt="Программист" />
     <div>
       <h2>Здравствуйте! Меня зовут Даниил.</h2>
-      <p>Студент 2-го курса. Программирую на ASP.NET Core MVC. Стремлюсь стать Backend разработчиком.</p>
+      <p>Студент 2-го курса. Программирую на ASP.NET Core MVC. Стремлюсь стать Full Stack разработчиком.</p>
     </div>
-</section>
+    <div class="rounded-image">
+      <img src="./src/Photo.jpg" alt="Даниил">
+    </div>
+  </section>
 
   <section id="about" class="section" data-aos="fade-up">
     <h2>Обо мне</h2>
@@ -185,8 +77,8 @@
     <h2>Контакты</h2>
     <p>Email: <a href="mailto:zotckin.dany@yandex.ru">zotckin.dany@yandex.ru</a></p>
     <p>GitHub: <a href="https://github.com/MrNikto1 " target="_blank">github.com/MrNikto1</a></p>
-    <p>Telegram: <a href="https://t.me/Kamikoto_sama " target="_blank">@username</a></p>
-    <p>Город: Москва</p>
+    <p>Telegram: <a href="https://t.me/Kamikoto_sama " target="_blank">@Kamikoto_sama</a></p>
+    <p>Город: Иркутск</p>
   </section>
 
   <footer>
@@ -201,5 +93,6 @@
       once: true
     });
   </script>
+
 </body>
 </html>
