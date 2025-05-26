@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Даниил - Программист</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat :wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos @2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F5F7FA;
+      color: #2A2E36;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00A8FF;
+    }
+
+    header {
+      background: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 40px;
+      gap: 40px;
+    }
+
+    .hero h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .hero img {
+      max-width: 100%;
+      width: 400px;
+    }
+
+    .section {
+      padding: 40px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li::before {
+      content: "✅";
+      margin-right: 10px;
+    }
+
+    .projects .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #2A2E36;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    img {
+        width: 250px; /* Ширина круга */
+        height: 250px; /* Высота круга */
+        border-radius: 25%; /* Скругление углов */
+        object-fit: cover; /* Для правильного отображения, если картинка не квадратная */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Даниил</h1>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-down">
+    <img src="./src/Photo.jpg" alt="Программист" />
+    <div>
+      <h2>Здравствуйте! Меня зовут Даниил.</h2>
+      <p>Студент 2-го курса. Программирую на ASP.NET Core MVC. Стремлюсь стать Backend разработчиком.</p>
+    </div>
+</section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>Обо мне</h2>
+    <p>Я студент технического университета, обучаюсь на направлении «Информационные системы и технологии». Уже сейчас активно изучаю веб-разработку, особенно фреймворк ASP.NET Core MVC. Постоянно развиваюсь, пишу небольшие приложения, решаю задачи и стремлюсь к профессиональному росту.</p>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-left">
+    <h2>Навыки</h2>
+    <ul>
+      <li>C#</li>
+      <li>ASP.NET Core MVC</li>
+      <li>HTML / CSS</li>
+      <li>JavaScript / TypeScript</li>
+      <li>SQL / Entity Framework</li>
+      <li>Git / GitHub</li>
+      <li>Windows / Linux</li>
+      <li>REST API</li>
+      <li>Docker (на стадии изучения)</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section projects" data-aos="fade-right">
+    <h2>Проекты</h2>
+    <div class="card">
+      <h3>Mini Blog на ASP.NET Core MVC</h3>
+      <p>Простой блог с возможностью создания, редактирования и удаления записей. Используется SQLite.</p>
+    </div>
+    <div class="card">
+      <h3>Task Manager</h3>
+      <p>Веб-приложение для управления задачами с авторизацией пользователей и системой ролей.</p>
+    </div>
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Приложение, получающее данные о погоде через API и отображающее их на странице.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="zoom-in">
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:zotckin.dany@yandex.ru">zotckin.dany@yandex.ru</a></p>
+    <p>GitHub: <a href="https://github.com/MrNikto1 " target="_blank">github.com/MrNikto1</a></p>
+    <p>Telegram: <a href="https://t.me/Kamikoto_sama " target="_blank">@username</a></p>
+    <p>Город: Москва</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Даниил. Все права защищены.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos @2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
